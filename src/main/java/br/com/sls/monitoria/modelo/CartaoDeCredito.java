@@ -42,6 +42,10 @@ public class CartaoDeCredito {
 
 	public Double getSaldoDebito() {
 		return saldoDebito;
+	}	
+
+	public String getSenha() {
+		return senha;
 	}
 
 	public String realizarCompraCredito(Produto produto, String senha) {
@@ -51,19 +55,6 @@ public class CartaoDeCredito {
 				return "Compra do " + produto.getDescricao() + " foi realizada com sucesso \n Saldo Crédito Atual: " + this.getSaldoCredito();
 			} else {
 				return "Você não possui saldo na funcao crédito para comprar o " + produto.getDescricao();
-			}
-		} else {
-			return "Senha inválida";
-		}
-	}
-
-	public String realizarCompraDebito(Produto produto, String senha) {
-		if (senha.equals(this.senha)) {
-			if (produto.getPreco() <= this.saldoDebito) {
-				this.saldoDebito = this.saldoDebito - produto.getPreco();
-				return "Compra do " + produto.getDescricao() + " foi realizada com sucesso \n Saldo Débito Atual: " + this.getSaldoDebito();
-			} else {
-				return "Você não possui saldo na funcao débito para comprar o " + produto.getDescricao();
 			}
 		} else {
 			return "Senha inválida";
