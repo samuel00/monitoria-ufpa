@@ -16,8 +16,8 @@ public class CartaoDeCredito {
 		this.descricao = descricao;
 		this.bandeira = bandeira;
 		this.saldoCredito = 1000.00;
-		this.saldoDebito = 498.000;
-		this.senha = "ufpa";
+		this.saldoDebito = 500.000;
+		this.senha = "cbsi";
 	}
 
 	public String getDescricao() {

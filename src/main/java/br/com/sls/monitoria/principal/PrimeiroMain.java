@@ -8,8 +8,8 @@ import br.com.sls.monitoria.modelo.Produto;
 
 public class PrimeiroMain {
 	public static void main(String[] args) {
-		// Declarando os objetos
-		Produto livro = new Produto(1, "Livro de Java", 2000.00);
+		// 1 PASSO - Declarando os objetos
+		Produto livro = new Produto(1, "Livro de Java", 70.00);
 		CartaoDeCredito cartaoDeCredito = new CartaoDeCredito("Ourocard", "Visa");
 		Pessoa pessoa = new Pessoa("Paula", "00022233345", cartaoDeCredito);
 
@@ -20,7 +20,8 @@ public class PrimeiroMain {
 		// Recuperando Senha
 		String senha = JOptionPane.showInputDialog("Digite sua senha");
 		String mensagem = "";
-
+		
+		// 2 - PASSO - Verificar o comportamento dos objetos
 		if (respostaTipoCompra == 1) {
 			// Realizando compra no crédito
 			mensagem = pessoa.getCartaoDeCredito().realizarCompraCredito(livro, senha);
