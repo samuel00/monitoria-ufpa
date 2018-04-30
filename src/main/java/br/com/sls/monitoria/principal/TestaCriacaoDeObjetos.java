@@ -20,7 +20,7 @@ public class TestaCriacaoDeObjetos {
 		 * Tarefa 01 - Implementar um programa que possa realizar a compra de TRÊS mercadorias atraves do cartao 
 		 * refeicao	de uma pessoa física. O processo de compra deve solicitar o numero do cartao, a senha 
 		 * do cartao, o valor da mercadoria e verificar se a pessoa possui saldo suficiente para realizar 
-		 * a compra.
+		 * a compra, caso nao possua saldo o programa deve exibir uma mensagem informando saldo insuficiente.
 		 * 
 		 * No final do processo deve aparecer uma mensagem informando o nome e cpf da pessoa assim como o 
 		 * saldo atual do cartao. */
