@@ -61,9 +61,13 @@ public class TestaCriacaoDeObjetos {
 		// Bloco que cadastra as mercadorias
 		while (!pararMercadoria) {
 			Mercadoria mercadoria = new Mercadoria();
-
+			
+			//Janela de dialogo que solicita o nome da mercadoria
 			String descricao = JOptionPane.showInputDialog("Informe o NOME da mercadoria");
+			
+			//Janela de dialogo que solicita o preco da mercadoria
 			String preco = JOptionPane.showInputDialog("Informe o PRECO da mercadoria");
+			
 			if (descricao == null || preco == null) {
 				pararMercadoria = true;
 			} else {
@@ -97,10 +101,14 @@ public class TestaCriacaoDeObjetos {
 									+ pessoaFisica.getCartaoRefeicao().getSaldo());
 					
 				} else {//Else do IF que verifica se existe saldo suficiente para compra
+					
+					//Janela que informa saldo insuficiente
 					JOptionPane.showMessageDialog(null, "Saldo Insuficiente");
 				}
 				
 			} else { //Else do IF que valida a senha
+				
+				//Janela que informa senha inválida
 				JOptionPane.showMessageDialog(null, "Senha Inválida");
 			}
 		}
