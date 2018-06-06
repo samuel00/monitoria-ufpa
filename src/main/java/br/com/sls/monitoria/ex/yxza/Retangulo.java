@@ -1,4 +1,4 @@
-package br.com.sls.monitoria.exercicio;
+package br.com.sls.monitoria.ex.yxza;
 
 public class Retangulo implements FormaGeometrica{
 	
